@@ -11,6 +11,10 @@ const Logo = styled.h1`
     @media (max-width: ${breakpoints.md}rem) {
         margin:1.5rem 0;
     }
+
+    img {
+        max-height:60px;
+    }
 `;
 
 const Nav = styled.header`
@@ -74,7 +78,9 @@ export default function Header() {
     <>
       <Nav>
         <NavRoot>
-          <Logo>Coding Cabin</Logo>
+          <Logo>
+            <img src="https://64.media.tumblr.com/avatar_5766c7a243de_128.pnj" />
+          </Logo>
           <NavInner>
             <NavList>
               <Link href="/">
