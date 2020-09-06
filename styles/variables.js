@@ -27,6 +27,7 @@ const width = {
   xs: 360,
   sm: 480,
   md: 960,
+  base: 1090,
   lg: 1200,
   xl: 1400,
 };
