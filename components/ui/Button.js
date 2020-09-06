@@ -14,6 +14,13 @@ const Button = styled.button`
   text-decoration: none;
   border: 2px solid ${colors.accentColorOne};
   color: ${colors.accentColorOne};
+  transition: all 0.5s;
+
+  &:hover,
+  &:focus {
+    transform: translateY(-5px);
+    box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.2);
+  }
 
   ${(props) =>
     props.isPrimary &&

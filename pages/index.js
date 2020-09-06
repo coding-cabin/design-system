@@ -9,6 +9,8 @@ import Button from "../components/ui/Button";
 
 import { colors } from "../styles/variables";
 
+import data from "../data/home.json";
+
 const Title = styled.h1`
   margin-bottom: 0.65rem;
   color: ${colors.headingColor};
@@ -35,6 +37,9 @@ export default function Home() {
           </div>
         </Container>
         <ContainerGrid>
+          {/* {data.map((data) => (
+            <Cards title={data.title} />
+          ))} */}
           <Cards
             title="Styles"
             desc="Make your design with guides for applying layout, typography, color and images"
