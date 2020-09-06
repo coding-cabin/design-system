@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 import Container from "../components/layout/Container";
+import ContainerGrid from "../components/layout/ContainerGrid";
+import Cards from "../components/ui/Card";
 
 import Layout from "../components/layout/Layout";
 import Button from "../components/ui/Button";
@@ -32,6 +34,16 @@ export default function Home() {
             </Button>
           </div>
         </Container>
+        <ContainerGrid>
+          <Cards
+            title="Styles"
+            desc="Make your design with guides for applying layout, typography, color and images"
+          />
+          <Cards
+            title="Components"
+            desc="Save your time with these reusable components for your design and more"
+          />
+        </ContainerGrid>
       </Layout>
     </>
   );

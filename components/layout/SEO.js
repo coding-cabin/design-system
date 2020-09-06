@@ -13,9 +13,19 @@ const SEO = ({ pageTitle }) => (
     <meta name="og:description" property="og:description" content="" />
     <meta property="og:site_name" content="" />
     <meta property="og:url" content="" />
-    {/* <link rel="icon" type="image/png" href="/images/favicon.ico" />
-    <link rel="apple-touch-icon" href="/images/favicon.ico" />
-    <link rel="shortcut icon" href="/images/favicon.ico" /> */}
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://64.media.tumblr.com/avatar_5766c7a243de_128.pnj"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://64.media.tumblr.com/avatar_5766c7a243de_128.pnj"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://64.media.tumblr.com/avatar_5766c7a243de_128.pnj"
+    />
   </Head>
 );
 export default SEO;

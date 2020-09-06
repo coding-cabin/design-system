@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { width, breakpoints } from "../../styles/variables";
 
 const Container = styled.section`
@@ -13,6 +13,12 @@ const Container = styled.section`
   @media (max-width: ${breakpoints.md}rem) {
     padding: 3.5rem 2rem;
   }
+
+  ${(props) =>
+    props.isSmall &&
+    css`
+      max-width: ${width.md}px;
+    `}
 `;
 
 export default Container;

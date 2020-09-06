@@ -20,7 +20,7 @@ const Logo = styled.h1`
 const Nav = styled.header`
   width: 100%;
 
-  background-color: ${colors.backgroundColor};
+  background-color: ${colors.white};
   z-index: 15;
   border-bottom: 1px solid ${colors.borderColor};
 `;
