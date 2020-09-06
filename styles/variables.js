@@ -9,10 +9,10 @@ const colors = {
   accentColorTwo: "#d3e2f2",
   accentColorThree: "#0b379b",
   bodyColor: "#666",
-  headingColor: "#333",
+  headingColor: "#111",
   borderColor: "#ccc",
   white: "#fff",
-  black: "#111",
+  black: "#000",
 };
 
 const breakpoints = {
@@ -23,4 +23,12 @@ const breakpoints = {
   xl: 90,
 };
 
-export { fonts, colors, breakpoints };
+const width = {
+  xs: 360,
+  sm: 480,
+  md: 960,
+  lg: 1200,
+  xl: 1400,
+};
+
+export { fonts, colors, breakpoints, width };
