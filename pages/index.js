@@ -1,19 +1,11 @@
 import styled from "styled-components";
-import { width, colors, breakpoints } from "../styles/variables";
+
+import Container from "../components/layout/Container";
 
 import Layout from "../components/layout/Layout";
 import Button from "../components/ui/Button";
 
-const Container = styled.section`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  // min-height: 100vh;
-  padding: 3.5rem 2rem;
-
-  max-width: ${width.base}px;
-  margin: auto;
-`;
+import { colors } from "../styles/variables";
 
 const Title = styled.h1`
   margin-bottom: 0.65rem;
