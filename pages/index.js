@@ -2,6 +2,8 @@ import styled from "styled-components";
 import reset from "../styles/reset";
 import { width, colors } from "../styles/variables";
 
+import Button from "../components/ui/Button";
+
 const Container = styled.section`
   display: flex;
   justify-content: center;
@@ -34,6 +36,11 @@ export default function Home() {
           Hi! This page is currently under construction. We apologize for the
           unconvenience.
         </Text>
+        <div>
+          <Button isPrimary as="a" href="https://codingcabin.tumblr.com/">
+            Visit our blog
+          </Button>
+        </div>
       </Container>
     </>
   );
