@@ -7,14 +7,16 @@ import Cards from "../components/ui/Card";
 import Layout from "../components/layout/Layout";
 import Button from "../components/ui/Button";
 
-import { colors } from "../styles/variables";
-
-import data from "../data/home.json";
+import { colors, breakpoints } from "../styles/variables";
 
 const Title = styled.h1`
   font-size: 32px;
   margin-bottom: 0.65rem;
   color: ${colors.headingColor};
+
+  @media (max-width: ${breakpoints.md}rem) {
+    font-size: 24px;
+  }
 `;
 
 const Version = styled.div`
