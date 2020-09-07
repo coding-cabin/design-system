@@ -3,7 +3,7 @@ import { width, colors, breakpoints } from "../../styles/variables";
 
 import Link from "./Link";
 
-const Logo = styled.h1`
+const Logo = styled.div`
     color:${colors.black};
     font-weight:bold
     font-size:16px;

@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Layout from "../components/layout/Layout";
 import Container from "../components/layout/Container";
 
+import BreadCrumbs from "../components/ui/Breadcrumbs";
+
 import { colors } from "../styles/variables";
 
 const Title = styled.h1`
@@ -18,6 +20,7 @@ export default function About() {
   return (
     <>
       <Layout pageTitle="About">
+        <BreadCrumbs title="About"></BreadCrumbs>
         <Container isSmall>
           <Title>About this site</Title>
           <Text>
