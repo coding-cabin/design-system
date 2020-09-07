@@ -12,8 +12,20 @@ import { colors } from "../styles/variables";
 import data from "../data/home.json";
 
 const Title = styled.h1`
+  font-size: 32px;
   margin-bottom: 0.65rem;
   color: ${colors.headingColor};
+`;
+
+const Version = styled.div`
+  margin-bottom: 1rem;
+
+  span {
+    background-color: ${colors.accentColorThree};
+    color: ${colors.white};
+    padding: 0.25rem 0.65rem;
+    border-radius: 6px;
+  }
 `;
 
 const Text = styled.p`
@@ -26,6 +38,9 @@ export default function Home() {
       <Layout pageTitle="Home">
         <Container>
           <Title>Coding Cabin's Design System</Title>
+          <Version>
+            <span>v1.0</span>
+          </Version>
           <Text>
             Hi! This page is currently under construction. We apologize for the
             unconvenience.

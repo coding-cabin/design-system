@@ -3,7 +3,6 @@ import styled, { css } from "styled-components";
 import { width, colors, breakpoints } from "../../styles/variables";
 
 import Link from "next/link";
-// import { useRouter } from "next/router";
 
 const BreadCrumb = styled.section`
   width: 100%;
