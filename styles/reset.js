@@ -46,6 +46,10 @@ const reset = css.global`
     list-style: none;
   }
 
+  a {
+    color: ${colors.black};
+  }
+
   /* A elements that don't have a class get default styles */
   a:not([class]) {
     text-decoration-skip-ink: auto;

@@ -93,13 +93,13 @@ export default function Header() {
               </Link>
             </NavList>
             <NavList>
-              <Link href="/guides">
-                <a>Guides</a>
+              <Link href="/docs">
+                <a>Docs</a>
               </Link>
             </NavList>
             <NavList>
-              <Link href="/docs">
-                <a>Docs</a>
+              <Link href="/guides">
+                <a>Guides</a>
               </Link>
             </NavList>
           </NavInner>

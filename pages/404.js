@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 import Layout from "../components/layout/Layout";
 import Container from "../components/layout/Container";
-
-import BreadCrumbs from "../components/ui/Breadcrumbs";
+import Link from "next/link";
 
 import { colors } from "../styles/variables";
 
@@ -19,14 +18,12 @@ const Text = styled.p`
 export default function About() {
   return (
     <>
-      <Layout pageTitle="About">
-        <BreadCrumbs title="about"></BreadCrumbs>
+      <Layout pageTitle="Not Found">
         <Container isSmall>
-          <Title>About this site</Title>
+          <Title>Not found</Title>
           <Text>
-            This website is designed for theme developers to help the community
-            in creating fast, accessible and mobile-friendly UI components to
-            build the coding cabin blog faster.
+            The page you are looking for cannot be found. Click{" "}
+            <Link href="/">here</Link> to go back to home page.
           </Text>
         </Container>
       </Layout>
