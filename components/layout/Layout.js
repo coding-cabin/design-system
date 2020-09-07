@@ -17,12 +17,7 @@ export default function Layout({ children, pageTitle }) {
       </style>
       <Header />
       <Root>{children}</Root>
-      <Footer>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi facere
-        quod aliquid non quas soluta voluptatum, perspiciatis est, fugiat
-        exercitationem esse! Soluta id eos vitae, exercitationem sunt mollitia
-        obcaecati quisquam.
-      </Footer>
+      <Footer>&copy; 2020 Coding Cabin. All rights reserved.</Footer>
     </>
   );
 }
