@@ -17,7 +17,9 @@ export default function Layout({ children, pageTitle }) {
       </style>
       <Header />
       <Root>{children}</Root>
-      <Footer>&copy; 2020 Coding Cabin. All rights reserved.</Footer>
+      <Footer>
+        &copy; {new Date().getFullYear()} Coding Cabin. All rights reserved.
+      </Footer>
     </>
   );
 }
