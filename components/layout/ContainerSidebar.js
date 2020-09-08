@@ -37,7 +37,7 @@ const Sidebar = styled.aside`
 
   h1 {
     font-size: 1.5em;
-    margin-bottom: 1rem;
+    margin-bottom: 1.35rem;
   }
 
   @media (max-width: ${breakpoints.md}rem) {

@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { colors, breakpoints } from "../../styles/variables";
+import Link from "../layout/Link";
 
 const Root = styled.nav`
   //   background-color: ${colors.white};
@@ -24,6 +25,12 @@ const RootLinkItem = styled.li`
     display: inline-flex;
     padding: 1rem 1rem;
     text-decoration: none;
+
+    &:hover,
+    &.selected {
+      font-weight: bold;
+      border-left: 4px solid ${colors.accentColorThree};
+    }
   }
 `;
 
@@ -33,13 +40,19 @@ export default function LinkList() {
       <Root>
         <RootLink>
           <RootLinkItem>
-            <a href="#1">Get Started</a>
+            <Link href="/docs">
+              <a>Get Started</a>
+            </Link>
           </RootLinkItem>
           <RootLinkItem>
-            <a href="#2">Layout</a>
+            <Link href="/docs/layout">
+              <a>Layout</a>
+            </Link>
           </RootLinkItem>
           <RootLinkItem>
-            <a href="#3">General</a>
+            <Link href="/docs/general">
+              <a>General</a>
+            </Link>
           </RootLinkItem>
         </RootLink>
       </Root>
