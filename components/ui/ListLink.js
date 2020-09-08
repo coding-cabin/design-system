@@ -2,11 +2,14 @@ import styled, { css } from "styled-components";
 import { colors, breakpoints } from "../../styles/variables";
 
 const Root = styled.nav`
-  background-color: ${colors.white};
+  //   background-color: ${colors.white};
+  border: 1px solid ${colors.borderColor};
 `;
 
 const RootLink = styled.ul`
   list-style: none;
+  margin: 0;
+  padding: 0;
 `;
 
 const RootLinkItem = styled.li`

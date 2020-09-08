@@ -20,16 +20,24 @@ const Root = styled.section`
 
 const RootContent = styled.div`
   padding: 2.85rem 1.95rem;
+
+  @media (max-width: 60rem) {
+    margin-top: 1.85rem;
+    padding: 0;
+  }
 `;
 
 const Sidebar = styled.aside`
   position: sticky;
   top: 0;
   min-width: 20rem;
-  padding: 2.85rem 1.95rem;
+  @media (min-width: 65rem) {
+    padding: 2.85rem 1.95rem;
+  }
 
   h1 {
     font-size: 1.5em;
+    margin-bottom: 1rem;
   }
 
   @media (max-width: ${breakpoints.md}rem) {
