@@ -41,7 +41,7 @@ export default function LinkList() {
         <RootLink>
           <RootLinkItem>
             <Link href="/docs">
-              <a>Get Started</a>
+              <a>Getting started</a>
             </Link>
           </RootLinkItem>
           <RootLinkItem>

@@ -9,7 +9,7 @@ const SEO = ({ pageTitle }) => (
     )}
     <meta name="description" content="Personal Site" />
     <meta property="og:type" content="website" />
-    <meta name="og:title" property="og:title" content="{pageTitle}" />
+    <meta name="og:title" property="og:title" content={pageTitle} />
     <meta name="og:description" property="og:description" content="" />
     <meta property="og:site_name" content="" />
     <meta property="og:url" content="" />
