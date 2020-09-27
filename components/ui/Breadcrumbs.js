@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 import { width, colors, breakpoints } from "../../styles/variables";
 
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const BreadCrumb = styled.section`
   width: 100%;
@@ -52,17 +53,42 @@ const BreadCrumbLinkItem = styled.li`
   }
 `;
 
+const HOME_TITLE = "home";
+
+/**
+ *
+ * @param {string} path pathname property from next/router
+ */
+function getCrumbs(path) {
+  const paths = path.split("/");
+
+  const crumbs = paths.map((crumb, index) => {
+    const url = paths.slice(0, index + 1).join("/") || "/";
+    return {
+      title: crumb || HOME_TITLE,
+      url,
+    };
+  });
+
+  const currentCrumb = crumbs.pop();
+
+  return { crumbs, currentCrumb };
+}
+
 export default function BreadCrumbs({ title }) {
+  const { pathname } = useRouter();
+  const { crumbs, currentCrumb } = getCrumbs(pathname);
   return (
     <>
       <BreadCrumb>
         <BreadCrumbInner>
-          <BreadCrumbTitle>{title}</BreadCrumbTitle>
           <BreadCrumbLink>
-            <BreadCrumbLinkItem>Home</BreadCrumbLinkItem>
-            <BreadCrumbLinkItem>
-              <Link href={title}>{title}</Link>
-            </BreadCrumbLinkItem>
+            {crumbs.map(crumb => (
+              <BreadCrumbLinkItem key={crumb.title}>
+                <Link href={crumb.url}>{crumb.title}</Link>
+              </BreadCrumbLinkItem>
+            ))}
+            <BreadCrumbLinkItem>{currentCrumb.title}</BreadCrumbLinkItem>
           </BreadCrumbLink>
         </BreadCrumbInner>
       </BreadCrumb>
