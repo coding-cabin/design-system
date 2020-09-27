@@ -20,7 +20,7 @@ export default function About() {
   return (
     <>
       <Layout pageTitle="About">
-        <BreadCrumbs title="about"></BreadCrumbs>
+        <BreadCrumbs />
         <Container isSmall>
           <Title>About this site</Title>
           <Text>

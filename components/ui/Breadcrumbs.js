@@ -75,7 +75,7 @@ function getCrumbs(path) {
   return { crumbs, currentCrumb };
 }
 
-export default function BreadCrumbs({ title }) {
+export default function BreadCrumbs() {
   const { pathname } = useRouter();
   const { crumbs, currentCrumb } = getCrumbs(pathname);
   return (
